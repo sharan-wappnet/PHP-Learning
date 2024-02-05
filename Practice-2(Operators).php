@@ -52,10 +52,52 @@ echo  $a *= $b ."<br>";
 
 echo  $a /= $b ."<br>";
 
-echo  $a %= $b ."<br>";
+echo  $a %= $b ."<br> <br>";
 
-//Increment / Decrement Operators
+//Increment / Decrement Operators (++$x,$x++,--$x,$x--)
 
+echo "<br><br>Increment / Decrement Operators<br>";
 
+$x = 10;
+$y = 2;
+
+echo ++$y; // pre-increment value =3
+
+echo "<br>";// current value is 10
+
+echo $x++; // post-increment value =10(no aaction bec=fore the loop ends)
+
+echo "<br>";// current value of x=11,y=3 
+
+echo --$y; // pre-decrement value = 2
+
+echo "<br>";//current value is 11
+
+echo $x--;// post-decrement value =11
+// after this value is 10
+
+echo "<br><br>Logical Operators<br>";
+
+var_dump($a and $b);
+
+echo "<br>";
+
+var_dump($a or $b);
+
+echo "<br>";
+
+var_dump($a xor $b);
+
+echo "<br>";
+
+var_dump($a && $b);
+
+echo "<br>";
+
+var_dump($a || $b);
+
+echo "<br>";
+
+var_dump($a != $b);
 
 ?>
