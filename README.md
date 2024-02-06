@@ -3,12 +3,12 @@ Hello @all
 Please go through below all topics of PHP in detail with concepts & example
 
 -Variables, Data Types  --In file [Practice-1(Datatypes).php]
--Operators -- In file [Practice-1(Operators).php]
-Control Structures
-Functions
-Strings and inbuilt string functions in PHP 
-Arrays and inbuilt array functions in PHP
-Constants
+-Operators, Control Structures -- In file [Practice-1(Operators).php]
+-Loops --[Practice-1(Loops).php]
+-Functions --[Practice-1(Functions).php] 
+-Strings and inbuilt string functions in PHP --[Practice-1(string_functions).php]
+-Arrays and inbuilt array functions in PHP --[Practice-1(array_functions).php]
+-Constants --[Practice-1(Constants).php]
 Super Globals
 Include and Require
 Error Handling and Error Handling with Exception

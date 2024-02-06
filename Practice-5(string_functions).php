@@ -94,23 +94,47 @@ $charlist = " ,!";
 
 $length = strcspn($string, $charlist);
 
-echo "Length of initial segment without characters from charlist: $length"; // Outputs: 5
+echo "Length of initial segment without characters from charlist: $length <br>"; // Outputs: 5
 
-// str_getcsv()
-// str_ireplace()
-// strripos()
-// strspn()
-// strpbrk()
-// money_format()
+// str_getcsv() =same as explode converts into array 
+
+// str_ireplace() = replaces the substring from the main string  which 
+$input = "Hello, world!";
+$search = "hello";
+$replace = "Hi";
+
+echo "<br>".str_ireplace($search, $replace, $input)."<br><br>";
+
+// strripos() - occurence from the last index
+
+
+
+// strspn() = how many char are matched and are same in length
+
+// strpbrk()= get the after string of mentioned character
+
+// money_format() not in php5
+
 // number_format()
-// ord()
+$num = 12345678.45;
+echo number_format($num,2);
+
+// ord() = asciivalue of character 
+echo "<br><br>".ord("A")."<br>";
+
 // chr()
+echo "<br>".chr(65)."<br>";
+
 // strchr()
+
 // strpbrk()
-// strripos()
+
 // substr_compare()
+
 // vfprintf()
+
 // vsprintf()
+
 // wordwrap()
 
 ?>
