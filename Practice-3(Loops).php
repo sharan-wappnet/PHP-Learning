@@ -77,9 +77,4 @@ while($m <= 6){
     if($m == 3) continue; //it continues when we got $m = 3 till it will increase the value 
     echo $m."<br>";
 }
-
-
-
-
-
 ?>
