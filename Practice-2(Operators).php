@@ -99,15 +99,105 @@ var_dump($a || $b);
 echo "<br>";
 
 var_dump($a != $b);
-echo "<br>";
+echo "<br><br>";
 
 //Conditional Assignment Operators(?:)
 
 
 $age = 18;
 
- echo $result = ($age >= 18) ? "is miner" : "is adult" ;
+ echo $result = ($age >= 18) ? "is miner" : "is adult";
 
 
+ echo "<br><br>Control structure<br>";
+
+ /*Control structure in php 
+ -In PHP we have the following conditional statements:
+        if statement - executes some code if one condition is true
+        if...else statement - executes some code if a condition is true and another code if that condition is false
+        if...elseif...else statement - executes different codes for more than two conditions
+        switch statement - selects one of many blocks of code to be executed*/
+
+
+//if statement - executes some code if one condition is true
+$aman =15;
+if($aman >=18){
+    echo "<br>You are a miner";
+}else{
+    echo "<br>You are not a miner";
+}
+
+//Logical Operators
+$ab = 10;
+$bc = 11;
+$cd = 12;
+
+if ($ab == $bc && $bc > $cd){
+    echo "<br>Both conditions are true";
+}else{
+    echo "<br>Both conditions are false";
+}
+
+//The if...elseif...else Statement
+
+$abc = "haWai";
+
+if ($abc == 10){
+    echo "<br> its true";
+}elseif ($abc == 11){ 
+    echo "<br>its false";
+}else{
+    echo "<br>come to $abc<br>";
+}
+
+//short hand if statement is just ternary operator(?:)
+
+ echo $bcd = ($abc == "haWai")? " come to hawai": " come not to hawai";
+
+ echo "<br><br>Nested if  statement<br>";
+ //Nested if statement is 
+
+ $age1 = 23;
+ $gender = "male";
+ if ($age1 >= 18){
+    echo "<br> ur an adult <br>";
+
+    if ($gender == "male"){
+        echo "<br> welcome sir, <br>";
+    }else{
+        echo "<br> welcome ma'am <br>";
+    }
+ }else{
+    echo "<br> you are not an adult <br>";
+ }
+
+ //Switch Statement
+
+ switch($age >=18){
+    case true:
+        echo "<br> you are an adult <br>";
+        break;
+    case false:
+        echo "<br> you are not an adult <br>";
+        break;
+    default:
+        echo "<br> you are not an adult <br>";
+        break;
+ }
+
+//  also it used for making a choice
+$choice = 2;
+
+switch($choice){
+    case 1:
+    case 2:
+    case 3:{
+        echo "<br> your choice is $choice alone <br>";
+    }
+    break;
+    default:
+    echo "<br> your group it not here <br>";
+    break;
+}
 
 ?>
