@@ -7,7 +7,7 @@ echo "Array Built-in functions: -";
 // array()-use to make array
 
 // count()
-$arr = ["rice","dal","sambhar","dasar","idli","vada"];
+$arr = ["rice","dal","sambhar"];
 
 echo "<br>".count($arr)."<br>";
 // sizeof()= same as count()
@@ -57,27 +57,66 @@ print_r($arr1);
 $pop = array_pop($arr1);
 print_r($arr1);
 
-// array_shift()
+// array_shift() =The array_shift() function removes the first element from an array and returns it. All numerical array keys will be modified to start counting from zero while literal keys won't be affected.
+$shift = array_shift($arr);
+print_r($arr);
 
-// array_unshift()
-// array_merge()
+// array_unshift() = will undo the effect or add new item as 1st element of the array
+$unshift = array_unshift($arr,"Onigiri");
+print_r($arr);
+
+// array_merge() = use to merge two arrays;
+/* $merge = array_merge($arr,$arr1);
+ print_r($merge);
+*/
+
 // array_combine()
-// array_flip()
-// array_reverse()
-// array_slice()
-// array_splice()
+$combine = array_combine($arr,$arr1);
+print_r($combine);
+
+// array_flip() = switch <=> key with values
+$flip = array_flip($combine);
+print_r($flip);
+
+// array_reverse() = reverse the elements of the array
+$reverse = array_reverse($flip);
+print_r($reverse);
+
+// array_slice() = saperate into a slice of start to end 
+$slice = array_slice($reverse,0,2);
+print_r($slice);
+
 // array_filter()
-// array_map()
-// array_reduce()
-// array_sum()
+$filter = array_filter($combine,function($value){
+    return $value < 1 ;
+});
+print_r($filter);
+
+// array_map() = function applies a callback function to each element of an array and returns the modified array.
+$counting = [1,2,3,4,5,6,7,8,9];
+$array_map = array_map(function($value){
+    return $value * 2;
+},$counting);
+print_r($array_map);
+
+
+// array_reduce() = reduce array to singlle value element
+$reduce = array_reduce($counting,function($carry,$item){
+    return $carry+$item;
+},0);
+
+echo $reduce;
+// array_sum() = sum the array values
+$sum = array_sum($counting);
+print_r($sum);
+
 // array_unique()
+
 // array_intersect()
 // array_diff()
-// array_flip()
 // array_key_exists()
 // array_change_key_case()
 // array_rand()
-// array_reverse()
 // array_column()
 
 
