@@ -101,5 +101,13 @@ echo "<br>";
 var_dump($a != $b);
 echo "<br>";
 
-    
+//Conditional Assignment Operators(?:)
+
+
+$age = 18;
+
+ echo $result = ($age >= 18) ? "is miner" : "is adult" ;
+
+
+
 ?>
