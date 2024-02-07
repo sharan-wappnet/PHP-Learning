@@ -39,7 +39,8 @@ $arr1 = ["a" => "apple", "b" => "banana", "c" => "cherry"];
 $arrvalue = array_values($arr1);
 print_r($arrvalue);
 echo "<br>";
-// in_array()
+
+// in_array() =element exists in array or not 
 $result = in_array("banana",$arr1);
 echo  $result ? 'yes in the array' : 'no, not in the array';
 
@@ -53,7 +54,7 @@ print_r($search);
 $push = array_push($arr1,"greps");
 print_r($arr1);
 
-// array_pop()
+// array_pop() = remove the last element
 $pop = array_pop($arr1);
 print_r($arr1);
 
@@ -106,18 +107,46 @@ $reduce = array_reduce($counting,function($carry,$item){
 },0);
 
 echo $reduce;
-// array_sum() = sum the array values
+// array_sum() = sum the array values | only works for num array 
 $sum = array_sum($counting);
 print_r($sum);
 
-// array_unique()
+// array_unique() = to get the unique elements
 
-// array_intersect()
-// array_diff()
-// array_key_exists()
-// array_change_key_case()
-// array_rand()
-// array_column()
+// array_intersect() = it gives the matching values fiom 2 or more aarays that has the same key-value pairs
+
+// array_diff() = opposite of array_intersect()
+$array1 = array("a" => "apple", "b" => "banana", "c" => "cherry");
+$array2 = array("b" => "banana", "c" => "cherry", "d" => "date");
+$diff_array = array_diff($array2, $array1); //the 1st array's unique element will be published 
+print_r($diff_array);
+
+// array_key_exists() checks the key exists or not 
+
+if(array_key_exists("b",$array1))//1st is key 2nd is
+{
+    echo "yes";
+}else{
+    echo "no";
+}
+
+// array_change_key_case()= use to change the case of the 'all' keys
+$lwrcase = array_change_key_case($array1,CASE_UPPER);
+
+print_r($lwrcase);
+// array_rand() = Returns random keys from an array
+$rndm = array_rand($array1,2);
+print_r($rndm);
+
+
+// array_column() = use for matrix array with column
+$matrix = [
+    ['name' => "James", 'id' => 1, 'salary' =>  330 ],
+    ['name' => "Jamal", 'id' => 2, 'salary' => 340 ],
+    ['name' => "Jignesh", 'id' => 3, 'salary' => 350 ]
+];
+$name = array_column($matrix,"name");
+print_r($name);
 
 
 

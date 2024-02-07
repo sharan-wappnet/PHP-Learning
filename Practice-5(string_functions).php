@@ -12,7 +12,7 @@ echo "<br>".str_replace("gre","reg",$y)."<br>";
 // strpos()
 echo "<br>".strpos($y,"g")."<br>";
 
-// substr()
+// substr() =display the chars as er position
 echo "<br>".substr($y,8,12);
 
 // strtolower()=lowecase
@@ -41,42 +41,41 @@ echo "<br><br>".implode(",",$arrfruit)."<br><br>";
 echo "<br>".strrev($higher)."<br><br>";
 // htmlspecialchars()
 
-// str_pad()
+// str_pad() add anything till the end of position we mention
 $pad ="strpad\nvariable ";
 echo "<br><br>".str_pad($pad,20,"-")."<br><br>";
 
-// ucfirst()
+// ucfirst() 1st character as uppercase
 echo "<br>".ucfirst($pad)."<br><br>";
 
 
 // lcfirst()
 echo "<br>".lcfirst($pad)."<br><br>";
 
-// ucwords()
-echo "<br>".ucwords($pad)."<br><br>";
+// ucwords() all word's 1st character in uppercase
+echo "<br>".ucwords($pad)."<br><br>";// use space as a saperator
 
 
-// str_repeat()
+// str_repeat() repeat as times we mention 
 echo "<br>".str_repeat($pad,2)."<br><br>";
 
-// str_shuffle()
+// str_shuffle() shuffle the characters
 echo "<br>".str_shuffle($pad)."<br><br>";
 
-// str_word_count()
+// str_word_count() word counts
 echo "<br>".str_word_count($pad)."<br><br>";
 
 
-// nl2br()
+// nl2br() conver \n into <br>
 echo "<br>".nl2br($pad)."<br><br>";
 
-// substr_replace()
-
-echo "<br>".substr_replace($pad,"jay",7,4)."<br><br>";
+// substr_replace() replace specif characters
+echo "<br>".substr_replace($pad,"jay",7,4)."<br><br>";//length should be same 
 
 // strcasecmp()
 echo strcasecmp("JAY","jay")."<br><br>";
 
-// stristr()
+// stristr()  gives the full word 
 echo "<br>".stristr($pad,"var")."<br><br>";
 
 // strtr()
@@ -88,7 +87,7 @@ echo "<br>".strtr("var",$pad1)."<br><br>";
 
 // strcoll()= It is useful for comparing strings in different languages or regions where the sorting order may vary. The comparison is done based on the collation order determined by the locale settings.
 
-// strcspn()
+// strcspn() check the lenght between 2 chars
 $string = "Hello, World!";
 $charlist = " ,!";
 
@@ -125,16 +124,23 @@ echo "<br><br>".ord("A")."<br>";
 // chr()
 echo "<br>".chr(65)."<br>";
 
-// strchr()
+// strchr() remaining chars after the specific chars
+$rplc= "Learn Php";
+echo "<br>".strchr($rplc,"n")."<br>";
 
-// strpbrk()
+// strpbrk() same as strchr() 
+echo "<br>".strpbrk($rplc,"a")."<br>";
 
 // substr_compare()
+$rplc1 = "Learn";
+echo "<br>".substr_compare($rplc,$rplc1,0)."<br>";
 
 // vfprintf()
 
 // vsprintf()
 
-// wordwrap()
+// wordwrap() get new line each new word 
+$wordwrap = "kajgs, gaDfgs dgfgeisd, gfjgsggdF, giuegsGDfg esgDg fkgAKJh, gDf";
+echo "<br>".wordwrap($wordwrap,5,"<br>\n")."<br>";
 
 ?>

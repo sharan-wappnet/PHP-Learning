@@ -8,7 +8,7 @@ Please go through below all topics of PHP in detail with concepts & example
 -Functions --[Practice-1(Functions).php] 
 -Strings and inbuilt string functions in PHP --[Practice-1(string_functions).php]
 -Arrays and inbuilt array functions in PHP --[Practice-1(array_functions).php]
--Constants --[Practice-1(Constants).php]
+-Constants --[Practice-7(Constants).php]
 Super Globals
 Include and Require
 Error Handling and Error Handling with Exception
