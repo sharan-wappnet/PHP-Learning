@@ -9,9 +9,12 @@ Please go through below all topics of PHP in detail with concepts & example
 -Strings and inbuilt string functions in PHP --[Practice-1(string_functions).php]
 -Arrays and inbuilt array functions in PHP --[Practice-1(array_functions).php]
 -Constants --[Practice-7(Constants).php]
-Super Globals
-Include and Require
+-Super Globals --[Practice-8(SuperGlobals).php] 
+
+Include and Require--[Practice-9(include_require).php]
+
 Error Handling and Error Handling with Exception
+Error Reporting
 Classes and Objects 
 Namespaces
 Inheritance and Polymorphism
@@ -21,5 +24,4 @@ Sessions and Cookies
 File Handling
 Database Access
 Regular Expressions
-Error Reporting
 Date and Time Functions

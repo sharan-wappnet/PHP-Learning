@@ -103,7 +103,7 @@ echo "<br> <br>";
 //Example
 
 //Open a file handle
-$OpenFile = fopen("test.html", "r");
+$OpenFile = fopen("test.php", "r");
 
 //Check if OpenFile is a resource or not 
 if (is_resource($OpenFile)){
