@@ -39,20 +39,21 @@ echo "<br> <br>";
 
 //2.Assignment Operators (=,+=,-=,*=,/=,%=,**=)
 echo "Assignment Operators<br>";
-
+$c = 25;
+$d = 15;
 // updating value of $a everytime with the operations;
 
-echo $a = $b ."<br>";
+echo $c = $d ."<br>";
 
-echo  $a += $b ."<br>";
+echo  $c += $d ."<br>";
 
-echo  $a -= $b ."<br>";
+echo  $c -= $d ."<br>";
 
-echo  $a *= $b ."<br>";
+echo  $c *= $d ."<br>";
 
-echo  $a /= $b ."<br>";
+echo  $c /= $d ."<br>";
 
-echo  $a %= $b ."<br> <br>";
+echo  $c %= $d ."<br> <br>";
 
 //Increment / Decrement Operators (++$x,$x++,--$x,$x--)
 
@@ -77,6 +78,7 @@ echo $x--;// post-decrement value =11
 // after this value is 10
 
 echo "<br><br>Logical Operators<br>";
+
 
 var_dump($a and $b);
 

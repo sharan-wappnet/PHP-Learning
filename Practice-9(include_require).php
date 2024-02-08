@@ -12,7 +12,7 @@ include and require are both used to include and evaluate the contents of anothe
 */
 // Using include
 include 'include.html';
-?>
+?>      
     <main>
         <h2>Main Content</h2>
         <p>This is the main content of the page.</p>
