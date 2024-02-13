@@ -162,6 +162,119 @@ $minutes = 5;
 echo "<br> Convert (".$minutes.") -> ".mtos($minutes);
 
 
+echo "<br><br><br>";
+
+// reverse the words on place
+
+$str12 = "The quick brown fox jumps over the lazy dog";
+
+$strrev = strrev($str12);
+
+echo "<br>".strrev($str12);
+    $str123 = explode(' ',$strrev); //saperate the words into an array 
+    $result12  = implode(' ',array_reverse($str123)); //
+
+echo "<br>".$result12;
+
+
+
+
+
+
+//check the 1st and the last element from array 
+
+$arr = [1,2,3,4,5,6,7,8,9,10];
+
+function firstArg(...$arr) {
+	return implode('',reset($arr));
+	
+}
+
+function lastArg(...$arr) {
+	return implode('',end($arr));
+}
+echo "<pre>";
+
+echo (firstArg($arr));
+print_r(lastArg($arr));
+
+echo "</pre>";
+
+
+
+// /Create a function that counts how many D's are in a sentence
+
+$dstr = "My friend Dylan got distracted in school.";
+
+function countD($dstr) {
+    $dstr = strtolower($dstr);
+    $dcount = substr_count($dstr, 'd');
+    return $dcount;
+}
+
+echo "<br>".countD($dstr);
+
+//sumof array cubes 
+
+$cube = [1,2,3,4,5,6,7,8,9,10];
+
+function sumOfCubes($cube) {
+    $sum = 0;
+    foreach ($cube as $value) {
+        $sum += $value **3;
+    }
+    return $sum;
+}
+
+print_r(sumOfCubes([5,4,3]));
+
+
+//sums the total number of digits between two numbers, inclusive. 
+
+function sumOfDigits($num1,$num2) {
+    $sum1 = 0;
+    
+    for($i = $num1; $i <= $num2; $i++) {
+        $digits = str_split((string)$i);
+
+
+        foreach($digits as $digit){
+            $sum1 += strlen($digit);
+        }
+    }
+    return $sum1;
+
+
+}
+
+
+echo "<br>".sumOfDigits(10,12);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?>
